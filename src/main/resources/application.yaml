@@ -1,8 +1,6 @@
 
-kafka:
-  topic:
-    name: ${KAFKA_TOPIC:testtopic}
 
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:PLAINTEXT://localhost:29092}
+
