@@ -51,7 +51,7 @@ public class DemoRunner implements CommandLineRunner {
 
             System.out.println("Sending: " + customerJson);
             // Send the JSON String to the KafkaSendService class.
-            kafkaSendService.sendMessage(customerJson);
+            kafkaSendService.sendMessage("testtopic", customerJson);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
